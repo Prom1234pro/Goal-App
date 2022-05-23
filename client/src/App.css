@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background-color: rgb(124, 119, 119);
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(83, 81, 81, .99);
+    padding: 50px 50px;
+    border-radius: 20px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    width: 90%;
+    background-color: rgba(0, 0, 0, .2);
+
+} 
+h3 {
+    width: 80%;
+    text-align: center;
+    color: rgb(255, 187, 0);
+    margin-bottom: 30px;
+
+}
+input{
+    margin: 10px 0;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .2);
+    color: white;
+}
+input[type="submit"] {
+    background-color: rgb(255, 187, 0);
+    color: white;
+    align-self: center;
+}
+p {
+    color: white;
+}
+.link {
+    color: lightblue;
+}
+input.add {
+    width: 100%;
+    margin-bottom: 30px;
+}
+div.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(83, 81, 81, .99);
+    padding: 10px;
+    box-shadow: 0 0.1px 2px 1px rgb(83, 81, 81);
+}
+.goals-header {
+    background-color: rgb(255, 187, 0);
+    color: white;
+    width: fit-content;
+    margin: 40px auto;
+    padding: 5px 40px;
+    border-radius: 4px;
+    text-shadow: 1px 1px 2px rgb(80, 77, 77);
+}
+.nav button {
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+.user-goals {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgba(83, 81, 81, .99);
+    width: 80%;
+}
+.goal {
+    display: flex;
+    position: relative;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px;
+}
+.goal-focus {
+    display: flex;
+    position: relative;
+    background-color: rgb(75, 72, 72);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px;
+}
+.completed {
+    position: absolute;
+    left: 80%;
+    color: rgb(255, 187, 0);
+}
+.not-completed {
+    position: absolute;
+    left: 80%;
+}
+.reminder {
+    position: absolute;
+    left: 90%;
+}
+.reminder-notify {
+    position: absolute;
+    left: 90%;
+    color: rgb(255, 187, 0);
+}
+.user {
+    color: rgb(255, 187, 0);
+    font-size: 50px;
+}
+.error {
+    color: rgb(235, 96, 96);
+}
+#root {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.spinner {
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 187, 0);
+    width: 70px;
+    height: 70px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    top: 50%;
+    left: 46.5%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
